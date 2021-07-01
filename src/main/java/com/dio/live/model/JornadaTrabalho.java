@@ -9,6 +9,8 @@ import lombok.Builder;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.GenerationType;
+import javax.persistence.GeneratedValue;
 
 @Getter
 @Setter
@@ -20,6 +22,7 @@ import javax.persistence.Id;
 public class JornadaTrabalho {
 
     @Id
+    @GeneratedValue
     private long id;
     private String descricao;
 }
