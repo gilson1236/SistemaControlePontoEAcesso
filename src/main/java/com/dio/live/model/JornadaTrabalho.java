@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.GenerationType;
 import javax.persistence.GeneratedValue;
+import org.hibernate.envers.Audited;
 
 @Getter
 @Setter
@@ -19,6 +20,7 @@ import javax.persistence.GeneratedValue;
 @EqualsAndHashCode
 @Builder
 @Entity
+@Audited
 public class JornadaTrabalho {
 
     @Id

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.EqualsAndHashCode;
 import lombok.Builder;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Id;
 import javax.persistence.Entity;
@@ -20,6 +21,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode
 @Builder
 @Entity
+@Audited
 public class Usuario {
 
     @Id

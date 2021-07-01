@@ -15,9 +15,9 @@ import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.schema.ModelRef;
 
 @Configuration
-@EnableSwagger2
 public class SwaggerConfig {
 
+    @SuppressWarnings("deprecation")
     @Bean
     public Docket apiAdmin(){
         return new Docket(DocumentationType.SWAGGER_2)
